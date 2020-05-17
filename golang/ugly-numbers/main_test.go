@@ -14,6 +14,10 @@ func TestUgly(t *testing.T) {
 		t.Errorf("Ugly(6) returned false; wanted true")
 	}
 
+	if ugly(7) {
+		t.Errorf("Ugly(7) returned true; wanted false")
+	}
+
 	if !ugly(8) {
 		t.Errorf("Ugly(8) returned false; wanted true")
 	}
@@ -32,6 +36,10 @@ func TestUgly(t *testing.T) {
 
 	if ugly(33) {
 		t.Errorf("Ugly(33) returned true; wanted false")
+	}
+
+	if ugly(42) {
+		t.Errorf("Ugly(42) returned true; wanted false")
 	}
 
 }
